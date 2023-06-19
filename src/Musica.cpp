@@ -1,15 +1,4 @@
-class Musica {
-public:
-    std::string titulo;
-    std::string artista;
-    std::string genero;
+#include "Musica.h"
 
-    // Construtor
-    Musica(std::string titulo, std::string artista, std::string genero) {
-        this->titulo = titulo;
-        this->artista = artista;
-        this->genero = genero;
-    }
-
-    // Outros métodos relevantes
-};
+Musica::Musica(const std::string& titulo, const std::string& artista, const std::string& genero)
+    : titulo(titulo), artista(artista), genero(genero) {}
